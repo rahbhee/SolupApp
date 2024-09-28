@@ -2,14 +2,12 @@ import React from 'react'
 import SolupBetNav from './SolupBetNav'
 import solupbetdata from '../solupbetdata.json';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+
 
 const SolUpTrendingBets = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    navigate('/solupallbet');
-  }, [navigate]);
+
   const handlePlaceBet = (betId) => {
 
     navigate(`/placebet/${betId}`);
